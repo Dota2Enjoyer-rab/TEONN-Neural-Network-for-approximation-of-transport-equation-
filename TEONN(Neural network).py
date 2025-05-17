@@ -20,8 +20,8 @@ def accuracy(y_true, y_pred, threshold=0.05):
     return np.mean(correct)
 
 # Пути
-input_dir  = r'C:\Users\Admin\Desktop\AstraStuff\selections\transformed_input'
-output_dir = r'C:\Users\Admin\Desktop\AstraStuff\selections\transformed_output'
+input_dir  = r'your path'
+output_dir = r'your path'
 
 # Список файлов
 input_files  = sorted(glob.glob(os.path.join(input_dir,  '*.csv')))
