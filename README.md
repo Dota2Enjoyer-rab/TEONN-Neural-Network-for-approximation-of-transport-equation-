@@ -25,7 +25,7 @@ Neural network for approximating 1D transport profiles from plasma physics simul
 | Pearson Coefficient | 0.999   |
 | p-value             | 0.00    |
 
-![Training Progress](docs/training_curve.png) <!-- График обучения -->
+![Results](images/res.jpg)   <!-- График обучения -->
 
 ## Installation
 
@@ -40,24 +40,6 @@ cd TEONN-Neural-Network-for-approximation-of-transport-equation-
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### Training
-```python
-from teonn import TransportNetwork
-
-model = TransportNetwork(
-    input_dim=8,       # Number of input parameters
-    output_length=100  # Profile grid points
-)
-model.train(data_file="transport_data.h5")
-```
-
-### Prediction
-```python
-predictions = model.predict(test_parameters)
-model.export_to_csv(predictions, "results.csv")
-```
 
 ![Example Prediction](docs/prediction_example.png) <!-- Пример предсказания -->
 
